@@ -24,23 +24,23 @@ gsettings set org.gnome.desktop.background picture-uri file:///tmp/red.jpg), sho
 
 ## Customize:
 
-1. boot_device = '/dev/sda'
+### boot_device = '/dev/sda'
 
 The device you want to read block from.
 
-2. sector_count = 10
+### sector_count = 10
 
 The number of blocks you want to read.
 
-3. backup_file = '/tmp/backup_boot.dat'
+### backup_file = '/tmp/backup_boot.dat'
 
 The temporal backup file to get the hash.
 
-4. SENTINEL_SIGNATURE_FILE = '/etc/sentinel.sig'
+### SENTINEL_SIGNATURE_FILE = '/etc/sentinel.sig'
 
 The sentinel file where to store the hash result to be compared on every boot.
 
-5. ALGORITHM   = 'sha512'
+### ALGORITHM   = 'sha512'
 
 The algorithm you want to use. Please, remember that not every openssl implementation includes all the hashing algorithms.
 If you want to check in your specific platform for which ones are available:
@@ -48,7 +48,7 @@ If you want to check in your specific platform for which ones are available:
 - openssl dgst -help
 - python -c 'import hashlib;print hashlib.algorithms'
 
-6. Messages:
+### Messages:
 
 "msg", is the text to be printed on screen and "code" is the return code you can test with $?
 
