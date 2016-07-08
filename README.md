@@ -2,18 +2,18 @@
 Script to extract a signature of the first blocks of the disk, to be able to dectect boot tampering attemps.
 
 
-[*] Why:
+## Why:
 - Because we are paranoid about boot hijacking. So thinking about the easiest way to be able to detect tampering attemps...
 this is the result.
 
-[*] Who:
+## Who:
 
 - Javier Olascoaga <jolascoaga@rootedcon.com>
 - Román Ramírez <rramirez@rootedcon.com>
 
 https://www.rootedcon.com
 
-[*] How to:
+## How to:
 
 Put this script onto your init scripts (quick-dirty /etc/rc.local) and whenever you get SENTINEL-KO and/or $? == -1,
 you can raise an alarm.
@@ -22,7 +22,7 @@ We use to change the desktop background to red (i.e, if you use gnome and have a
 gsettings set org.gnome.desktop.background picture-uri file:///tmp/red.jpg), show a warning window through zenity
 (i.e, zenity  --error --text="WARNING TEXT") or do the action you consider.
 
-[*] Customize:
+## Customize:
 
 1. boot_device = '/dev/sda'
 
@@ -56,5 +56,6 @@ msg = {
         'error': { 'msg': 'SENTINEL-KO', 'code': -1 },
         'ok': { 'msg': 'SENTINEL-OK', 'code': 0 },
 }
+
 
 Happy hacking!
