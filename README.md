@@ -32,10 +32,6 @@ The device you want to read block from.
 
 The number of blocks you want to read.
 
-### backup_file = '/tmp/backup_boot.dat'
-
-The temporal backup file to get the hash.
-
 ### SENTINEL_SIGNATURE_FILE = '/etc/sentinel.sig'
 
 The sentinel file where to store the hash result to be compared on every boot.
