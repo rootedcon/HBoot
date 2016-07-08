@@ -28,9 +28,13 @@ gsettings set org.gnome.desktop.background picture-uri file:///tmp/red.jpg), sho
 
 The device you want to read block from.
 
+### sector_size = 1024
+
+By default we will read 1024 bytes blocks.
+
 ### sector_count = 10
 
-The number of blocks you want to read.
+The number of blocks you want to read (sector_count of sector_size lenght).
 
 ### SENTINEL_SIGNATURE_FILE = '/etc/sentinel.sig'
 
