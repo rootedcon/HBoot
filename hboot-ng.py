@@ -12,7 +12,6 @@ import hashlib
 
 boot_device = '/dev/sda'
 sector_count = 10
-backup_file = '/tmp/backup_boot.dat'
 SENTINEL_SIGNATURE_FILE = '/etc/sentinel.sig'
 ALGORITHM   = 'sha512'
 
