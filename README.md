@@ -10,6 +10,7 @@ this is the result.
 
 - Javier Olascoaga <jolascoaga@rootedcon.com>
 - Román Ramírez <rramirez@rootedcon.com>
+
 https://www.rootedcon.com
 
 [*] How to:
