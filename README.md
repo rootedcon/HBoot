@@ -47,6 +47,7 @@ If you want to check in your specific platform for which ones are available:
 
 - openssl dgst -help
 - python -c 'import hashlib;print hashlib.algorithms'
+- over 2.7.9, python -c 'import hashlib;print hashlib.algorithms_available'
 
 ### Messages:
 
