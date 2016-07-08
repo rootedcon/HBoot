@@ -12,6 +12,7 @@ import hashlib
 
 boot_device = '/dev/sda'
 sector_count = 10
+sector_size = 1024
 SENTINEL_SIGNATURE_FILE = '/etc/sentinel.sig'
 ALGORITHM   = 'sha512'
 
@@ -33,7 +34,7 @@ def _hash(data):
 
 def get_sectors():
     with open(boot_device, 'rb') as f:
-        return f.read(10)
+        return f.read(sector_count * sector_size)
 
 def new_run():
     resDump = get_sectors()
