@@ -28,7 +28,7 @@ def debug(data):
         print data
 
 def _hash(data):
-    m = eval('hashlib.' + ALGORITHM + '()')
+    m = hashlib.new(ALGORITHM)
     m.update(data)
     return m.hexdigest()
 
